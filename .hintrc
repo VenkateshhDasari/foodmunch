@@ -3,6 +3,15 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": "off"
+    "axe/text-alternatives": "off",
+    "no-inline-styles": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter"
+        ]
+      }
+    ]
   }
 }

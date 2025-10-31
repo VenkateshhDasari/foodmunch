@@ -223,3 +223,47 @@
   font-family: "Roboto";
   font-size: 14px;
 }
+
+:root {
+    --brand: #1D99BC; /* your tool primary color */
+    --card-radius: 18px;
+  }
+
+  .order-section {
+    /* background:
+      radial-gradient(1200px 400px at 10% -10%, rgba(29,153,188,0.08), transparent 60%),
+      radial-gradient(1000px 300px at 90% 110%, rgba(29,153,188,0.06), transparent 60%); */
+       background-color: #d0b2001a;
+  }
+
+  .order-card {
+    border-radius: var(--card-radius);
+    border: 1px solid rgba(29,153,188,0.18);
+    background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,255,255,0.98));
+    backdrop-filter: blur(4px);
+  }
+
+  .input-group-text {
+    background: #f8f9fa;
+    border-right: 0;
+  }
+  .input-group .form-control {
+    border-left: 0;
+  }
+  .form-control:focus, .form-select:focus {
+    border-color: rgba(29,153,188,0.45);
+    box-shadow: 0 0 0 .25rem rgba(29,153,188,0.15);
+  }
+
+  .btn-brand {
+    background: var(--brand);
+    border-color: var(--brand);
+  }
+  .btn-brand:hover {
+    filter: brightness(0.95);
+  }
+
+  /* Better spacing on small screens */
+  @media (max-width: 576px) {
+    .order-card { padding: 1.25rem !important; }
+  }
